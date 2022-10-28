@@ -5,11 +5,9 @@ class Solution:
         end=len(nums)-1
         while start<end :
             if nums[start]+ nums[end]==k:
-                #delete elements
-                nums[start]=nums[end]==0
                 #increment operation
                 operation+=1
-               #increment star and end operators
+               #increment start and end pointers
                 start+=1
                 end-=1
             elif nums[start]+nums[end]>k:
